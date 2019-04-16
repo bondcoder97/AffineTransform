@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Афинные преобразования</title>
+    <link href="./style.css" rel="stylesheet">
+</head>
+<body>
+     <div class="container">
+
+            <header>
+                    <h3>Афинные преобразования </h3>
+            </header>
+           
+          
+            <canvas class="drawingField">
+
+            </canvas>
+
+                <div class="managePanel">
+                     <h3 > Панель управления  </h3>
+                    <div ><label> Выберите цвет линии : <input id="lineColor" type="color" /> </label> </div>
+                    <div> <label> Выберите цвет заливки : <input id="fillColor" type="color" /> </label> </div>
+            <div class="manageBlock"> <button id="makeFigureButton">  Нарисовать фигуру </button>
+                 <button id="clearFigureButton"> Стереть </button> </div>
+            <div class="manageBlock">  <input type="text" id="scaleValue" placeholder="Коэффициент масштабирования" />
+                 <button id="scaleFigureButton"> Масштабировать </button> </div>
+            <div class="manageBlock" > <input id="oxMoveDist"  type="text" placeholder="Расстояние в пикселях по OX" /> 
+                <button id="oxMoveButton"> Перемещать по ОХ </button> </div>
+           <div class="manageBlock"> <input id="oyMoveDist" type="text" placeholder="Расстояние в пикселях по OY">  
+             <button id="oyMoveButton"> Перемещать  по ОY</button> </div>
+            <div class="manageBlock"> <button id="mirrorOXButton"> Отразить относительно OX</button> </div>
+            <div class="manageBlock"> <button id="mirrorOYButton"> Отразить относительно OY</button> </div>
+            <div class="manageBlock"> <button id="mirrorXYButton"> Отразить относительно прямой Y=X</button> </div>
+     <div class="manageBlock" > <input id="rotateValue" type="text" placeholder="Угол относительно центра координат" /> 
+        <button id="rotateButton"> Вращать </button> </div>
+       
+                        
+ 
+                </div>
+
+                <footer>
+                    <p> Бондаренко Андрей ИС - 61б </p>
+               
+                </footer>
+              
+     </div>
+     <!-- end of container -->
+
+     
+     <script src="./index.js"></script>
+
+  
+  
+</body>
+</html>
